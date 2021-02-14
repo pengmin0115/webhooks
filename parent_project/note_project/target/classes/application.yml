@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: note
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/note
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:
+    view:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
+server:
+  port: 5018
+  address: localhost
+
+mybatis:
+  mapper-locations: classpath:mapper\*.xml
+
