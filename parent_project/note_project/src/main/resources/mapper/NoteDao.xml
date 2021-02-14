@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yue.dao.NoteDao">
+
+    <insert id="insertNote" parameterType="com.yue.entity.Note">
+        insert into note (id,theme,content,date,time) values (null,#{theme},#{content},#{date},#{time});
+    </insert>
+
+    <select id="findAll" resultType="com.yue.entity.Note">
+        select * from note;
+    </select>
+</mapper>
